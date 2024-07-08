@@ -1,0 +1,11 @@
+services:
+  p4d:
+    build: p4d
+    ports:
+      - "1666:1666"
+    volumes:
+      - ./volumes/opt/perforce:/opt/perforce
+    environment:
+      - P4USER=admin
+      - P4PASSWD=Q0X0361t
+      - P4PORT=1666
